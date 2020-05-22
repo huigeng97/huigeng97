@@ -11,7 +11,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
     "@emotion/core": "^10.0.28",
@@ -19,6 +20,7 @@
     "gatsby-plugin-emotion": "^4.3.2",
     "gatsby-plugin-typography": "^2.5.2",
     "gatsby-source-filesystem": "^2.3.7",
+    "gatsby-transformer-remark": "^2.8.13",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-typography": "^0.16.19",
@@ -27,6 +29,7 @@
     "typography-theme-kirkham": "^0.16.19"
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "prettier": "2.0.5"
   },
   "repository": {
